@@ -18,6 +18,7 @@ DB_NAME = 'checkpoint'
 DB_USER = 'guard'
 DB_PASSWORD = 'osim5'
 DEBUG='True'
+ALLOWED_HOSTS = ['.localhost', '127.0.0.1']
 ```
 
 Чтобы запустить проект необходимо запустить файл `manage.py` и результат будет на сайте http://127.0.0.1:8000/
