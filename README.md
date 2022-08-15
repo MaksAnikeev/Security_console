@@ -18,8 +18,26 @@ DEBUG='True'
 ```
 
 Чтобы запустить проект необходимо запустить файл `manage.py` и результат будет на сайте http://127.0.0.1:8000/
+Пример запуска:
+Заходите в папку с проектом где лежит файл `manage.py`
+```
+python manage.py bot runserver
+```
+В консоле выведет:
+```
+Performing system checks...
+
+Watching for file changes with StatReloader
+System check identified no issues (0 silenced).
+August 15, 2022 - 06:21:22
+Django version 3.2.15, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+```
+
 
 Описание и настройки вложенных файлов:
+
 Файл `active_passcards_view` в папке `datacenter` фильтрует базу данных и выводит список только активных сотрудников банка, т.е. текущих работников банка.
 Это настраивается здесь:
 ```py
