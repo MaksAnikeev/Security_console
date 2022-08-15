@@ -3,24 +3,21 @@ from environs import Env
 
 env = Env()
 env.read_env()
-site_secret_key = env('SITE_SECRET_KEY')
-bd_password = env('BD_PASSWORD')
-bd_path = env('BD_PATH')
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': bd_path,
-        'PORT': '5434',
-        'NAME': 'checkpoint',
-        'USER': 'guard',
-        'PASSWORD': bd_password,
+        'HOST': env('BD_PATH'),
+        'PORT': env('BD_PORT'),
+        'NAME': env('BD_NAME'),
+        'USER': env('BD_USER'),
+        'PASSWORD': env('BD_PASSWORD'),
     }
 }
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = site_secret_key
+SECRET_KEY = env('SECRET_KEY')
 
 DEBUG = env.bool("DEBUG")
 

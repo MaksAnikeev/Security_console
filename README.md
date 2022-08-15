@@ -11,8 +11,11 @@
 - Записать в этом файле полученные `SITE_SECRET_KEY`, `BD_PATH`, `BD_PASSWORD`.
 Для данного учебного проекта можно указать:
 ``` 
-SITE_SECRET_KEY = 'REPLACE_ME'
+SECRET_KEY = 'REPLACE_ME'
 BD_PATH = 'checkpoint.devman.org'
+BD_PORT = '5434'
+BD_NAME = 'checkpoint'
+BD_USER = 'guard'
 BD_PASSWORD = 'osim5'
 DEBUG='True'
 ```
