@@ -12,11 +12,11 @@
 Для данного учебного проекта можно указать:
 ``` 
 SECRET_KEY = 'REPLACE_ME'
-BD_PATH = 'checkpoint.devman.org'
-BD_PORT = '5434'
-BD_NAME = 'checkpoint'
-BD_USER = 'guard'
-BD_PASSWORD = 'osim5'
+DB_PATH = 'checkpoint.devman.org'
+DB_PORT = '5434'
+DB_NAME = 'checkpoint'
+DB_USER = 'guard'
+DB_PASSWORD = 'osim5'
 DEBUG='True'
 ```
 
