@@ -12,7 +12,7 @@
 Для данного учебного проекта можно указать:
 ``` 
 SECRET_KEY = 'REPLACE_ME'
-DB_PATH = 'checkpoint.devman.org'
+DB_HOST = 'checkpoint.devman.org'
 DB_PORT = '5434'
 DB_NAME = 'checkpoint'
 DB_USER = 'guard'
